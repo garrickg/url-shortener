@@ -18,16 +18,16 @@ html
         li When I visit that shortened URL, it will redirect me to my original link.
       h2 Example Creation Input
       code
-        a(href='/new/www.google.com') #{url}/new/www.google.com
+        a(href='/new/http://www.google.com') #{url}/new/http://www.google.com
       h2 Example Creation Output
       code
-        | { "original_url":"www.google.com", "short_url":"#{url}/1000" }
+        | { "original_url":"http://www.google.com", "short_url":"#{url}/1000" }
       h2 Example Usage
       code
         a(href='/1000') #{url}/1000
       |  redirects to 
       code
-        a(href='http://www.google.com') www.google.com
+        a(href='http://www.google.com') http://www.google.com
       hr
       p
         | This was completed as an API project for the FreeCodeCamp Back End Certification, check out the details 
